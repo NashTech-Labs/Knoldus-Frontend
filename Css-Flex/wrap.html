@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox: Flex-Wrap</title>
+
+	<style>
+
+	/*flex containers*/
+	.fx-wrap-nowrap {
+		display: flex;
+		flex-wrap: nowrap;
+		/*height:300;*/
+		width:300px;
+		background-color:grey;
+	}
+
+	.fx-wrap-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		width:300px;
+		background-color:grey;
+	}
+
+
+	.fx-wrap-wrap-reverse {
+		display: flex;
+		flex-wrap: wrap-reverse;
+		/*height:300px;*/
+		width:300px;
+		background-color:grey;
+	}
+
+
+
+
+	.child{
+		width: 110px;
+		height:100px;
+		margin:5px;
+		background-color: orange;
+	}
+
+	</style>
+
+</head>
+<body>
+
+<!-- 
+The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.
+
+The possible values are as follows:
+
+nowrap - Default value. The flexible items will not wrap
+wrap - The flexible items will wrap if necessary
+wrap-reverse - The flexible items will wrap, if necessary, in reverse order
+
+-->
+
+<h4>Wrap: nowrap</h4>
+<div class="fx-wrap-nowrap">
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+</div>
+
+
+<h4>Wrap: wrap</h4>
+<div class="fx-wrap-wrap">
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	
+</div>
+
+<h4>Wrap: wrap-reverse</h4>
+<div class="fx-wrap-wrap-reverse">
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+</div>
+
+
+
+</body>
+</html>
