@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox: Align Items</title>
+
+	<style>
+
+	/*flex containers*/
+	.fx-align-items-stretch {
+		display: flex;
+		align-items: stretch;
+		height:150px;
+		background-color:grey;
+	}
+
+
+	.fx-align-items-flex-start {
+		display: flex;
+		align-items: flex-start;
+		height:150px;
+		background-color:grey;
+	}
+
+	.fx-align-items-flex-end {
+		display: flex;
+		align-items: flex-end;
+		height:150px;
+		background-color:grey;
+	}
+
+	.fx-align-items-center {
+		display: flex;
+		align-items: center;
+		height:150px;
+		background-color:grey;
+	}
+
+	.child{
+		width: 50px;
+		margin:10px;
+		background-color: orange;
+	}
+
+	</style>
+
+</head>
+<body>
+
+<!-- 
+	The align-items property vertically aligns the flexible container's items when the items do not use all available space on the cross-axis.
+
+	The possible values are as follows:
+
+	stretch - Default value. Items are stretched to fit the container
+	flex-start - Items are positioned at the top of the container
+	flex-end - Items are positioned at the bottom of the container
+	center - Items are positioned at the center of the container (vertically)
+	baseline - Items are positioned at the baseline of the container
+
+-->
+
+<h4>Align Items: stretch</h4>
+<div class="fx-align-items-stretch">
+	<div class="child"></div>
+	<div class="child"></div>
+	<div class="child"></div>
+</div>
+
+
+<h4>Align Items: flex-start</h4>
+<div class="fx-align-items-flex-start">
+	<div class="child">A</div>
+	<div class="child">B</div>
+	<div class="child">C</div>
+</div>
+
+
+<h4>Align Items: flex-end</h4>
+<div class="fx-align-items-flex-end">
+	<div class="child">A</div>
+	<div class="child">B</div>
+	<div class="child">C</div>
+</div>
+
+
+<h4>Align Items: center</h4>
+<div class="fx-align-items-center">
+	<div class="child">A</div>
+	<div class="child">B</div>
+	<div class="child">C</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox</title>
+
+	<style>
+		.bg {
+			/*First 2 lines make the items horizontally center*/
+			display: flex;
+			justify-content:center;
+
+			/*These two lines are making content vertically center*/
+			height: 95vh;
+			align-items:center;
+		}		
+
+		.fx-flow{
+			display: flex;
+			flex-flow: row;
+			justify-content: center;
+
+		}
+	</style>
+
+</head>
+<body>
+
+<div class="bg">
+	<form>
+		<input type="email" placeholder="Enter your name">
+		<input type="submit" value="submit">
+	</form>
+</div>
+
+<!-- Learning about flex-flow: it works in two ways 1- rows 2- columns
+here we have three para (we know p is block element like div) if we use row, these 3 p's will come in single line and if we use columns they will comins in a stack, and yes we can use above (justify-content and align-content) properties with flex-box. -->
+
+	<div class="fx-flow">
+		<p>Hello 1</p>
+		<p>Hello 2</p>
+		<p>Hello 3</p>
+	</div>
+
+</body>
+</html>
