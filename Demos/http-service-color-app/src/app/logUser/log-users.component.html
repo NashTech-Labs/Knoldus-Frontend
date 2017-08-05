@@ -1,0 +1,15 @@
+<h4>User Form</h4>
+
+<form #logForm="ngForm"  (ngSubmit)="logUserFun(logForm.value)">
+  <div class="form-group">
+    <input type="text" #nameRef="ngModel" name="email" placeholder="enter username" class="form-control"  [(ngModel)]="user.email">
+  </div>
+  <div class="form-group">
+    <input type="password" #passRef="ngModel" name="password" placeholder="enter password" class="form-control"  [(ngModel)]="user.password">
+  </div>
+  <button type="submit">Log User</button>
+</form>
+
+<div *ngIf="responseToken">
+  Response Token :  {{responseToken | json}}
+</div>
