@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name":"mens",
+    "color": "black"
+  },
+  {
+    "id": 2,
+    "name":"girly",
+    "color": "pink"
+  },
+  {
+    "id": 3,
+    "name":"weather",
+    "color": "yellow"
+  },
+  {
+    "id": 4,
+    "name":"sea",
+    "color": "green"
+  },
+  {
+    "id": 5,
+    "name":"water",
+    "color": "skyblue"
+  }
+]
