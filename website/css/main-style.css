@@ -73,7 +73,7 @@
     height: auto;
 }
 
-.topnav.stiky{ position: fixed; background: #fff; /* border-bottom: 1px solid #666; */ box-shadow: 0 0 10px #222; }
+.topnav.stiky{    transition: transform 1s ease-out; position: fixed; background: #fff; /* border-bottom: 1px solid #666; */ box-shadow: 0 0 10px #222; }
 .knol-style .nav>li>a { padding: 25px 20px;}
 
 .topnav{background: rgba(255,255,255,0);
@@ -84,6 +84,7 @@ background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(248,248,248,0)
 background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(248,248,248,0) 40%, rgba(246,246,246,0.15) 50%, rgba(255,255,255,0.9) 100%);
 background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(248,248,248,0) 40%, rgba(246,246,246,0.15) 50%, rgba(255,255,255,0.9) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+    border-bottom: 1px solid rgba(255,255,255,.2);
 }
 
 .topnav.stiky .nav>li>a:focus, .topnav.stiky .nav>li>a:hover {background-color: #00adee; color: #fff;}
@@ -93,3 +94,166 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .fix-bg1{ position: relative; background: url(../images/section-bg1.jpg) center top;  background-attachment: fixed; background-size: cover; min-height:550px; padding: 100px 0 }
 .fix-bg1 .container {z-index:4;position: relative;}
 .fix-bg1 .div-shadow {background: rgba(0, 0, 0, 0.8);}
+
+.fix-bg1 {
+    overflow: hidden;
+    z-index: 4;
+}
+
+header, footer, section{  position: relative;}
+/*
+#home::before {
+    content: '';
+    position: fixed;
+    left: 35%;
+    width: 100%;
+    height: 300%;
+    background-color: #8adfff;
+    top: 0;
+    transform: rotate(-40deg);
+    transform-origin: top left;
+    transition: transform 1s ease-out;
+    z-index: 0;
+}
+
+#about::before {
+    content: '';
+    position: fixed;
+    left: 35%;
+    width: 100%;
+    height: 300%;
+    background-color: #8adfff;
+    top: 0;
+    transform: rotate(-40deg);
+    transform-origin: top left;
+    transition: transform 1s ease-out;
+    z-index: 0;
+}*/
+
+#about:after {
+    content: "";
+    display: block;
+    background-color: rgba(0, 99, 123, 0.8);
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    transform: rotate(40deg);
+    top: -100px;
+    z-index: 0;
+    right: -35%;
+}
+
+
+#home:before {
+    content: "";
+    display: block;
+    background-color: #54d0ff;
+    width: 1800px;
+    height: 1000px;
+    position: fixed;
+    transform: rotate(-50deg);
+    top: 0;
+    z-index: 0;
+    left: 20%;
+}
+
+#section1:before {
+    content: "";
+    display: block;
+    background-color: rgba(36, 98, 133, 0.19);
+    width: 1400px;
+    height: 1400px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: -92%;
+    z-index: 0;
+    left: -90%;
+}
+
+#section1:after {
+    content: "";
+    display: block;
+    background-color: #5bacb7;
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    transform: rotate(0deg);
+    top: -50%;
+    z-index:-1;
+    left: 50%;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+.topnav .dropdown-menu {background: rgba(0, 0, 0, 0.4);}
+.topnav.stiky .dropdown-menu {background:#fff;}
+.nav { margin-bottom: 0; }
+.nav > li.dropdown.open { position: static; }
+.nav > li.dropdown.open .dropdown-menu {
+    display: table;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding:10px  20px;
+    border-top: 0;
+    min-height: 160px;
+}
+
+
+
+
+.topnav .dropdown-menu h4 {
+    color: #ff545a;
+    border-bottom: 1px dashed #5a5a5a;
+   font-size: 14px;
+    display: inline-block;
+    padding: 0 0 4px 0;
+    font-weight: 600;
+  }
+
+
+.dropdown-menu ul {
+    margin-left: 10px;
+    padding: 0;
+}
+
+.topnav.stiky .dropdown-menu ul li a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+}
+
+.topnav .dropdown-menu ul li a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #d4d4d4;
+}
+
+.topnav .dropdown-menu ul li a:hover {
+    color: #00aeef;
+    text-decoration: none;
+}
+
+.topnav.stiky .dropdown-menu h4 {
+    color: #c7262c;
+     border-bottom: 1px dashed #c7c7c7;
+   
+}
+
+.dropdown-menu li { display:block; list-style-type: none }
+
+.read-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 30px;
+    border:1px solid #FFF;
+    background: rgba(255, 255, 255, 0.01);
+}
+
+.read-more-btn:hover {text-decoration: none; border-color: #009fda; background-color: #009fda; color: #fff;}
+
+
